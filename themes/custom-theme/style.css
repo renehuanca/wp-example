@@ -1,0 +1,15 @@
+/*
+Theme Name: My custom theme
+Theme URI: https://mytheme.com
+Author: Rene Huanca
+Author URI: https://renehuanca.com
+Description: Tema básico para WordPress
+Version: 1.0
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: teal;
+}

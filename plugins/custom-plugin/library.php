@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Sistema de biblioteca
- * Description: Sistema de gestión de libros y estudiantes.
+ * Plugin Name: Sistema de Gestion de productos
+ * Description: Sistema de gestión de productos para la tienda.
  * Version: 1.0
  * Author: René
  */

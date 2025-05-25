@@ -22,10 +22,10 @@ function register_product_cpt()
     'labels' => $labels,
     'public' => true,
     'has_archive' => true,
-    'rewrite' => ['slug' => 'productos'],
+    'rewrite' => ['slug' => 'products'],
     'supports' => ['title', 'thumbnail'],
     'menu_icon' => 'dashicons-book-alt',
-    'show_in_rest' => false,
+    'show_in_rest' => true,
   ];
 
   register_post_type('product', $args);
