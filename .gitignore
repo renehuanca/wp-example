@@ -1,0 +1,15 @@
+# Ignore all files
+*
+
+# Except the plugin directory
+!plugins/
+!plugins/custom-plugin/
+!plugins/custom-plugin/**
+
+# Except the theme directory
+!themes/
+!themes/custom-theme/
+!themes/custom-theme/**
+
+# Except the .gitignore file
+!.gitignore
