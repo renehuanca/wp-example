@@ -9,6 +9,8 @@
 // Load Custom Post Types
 require_once plugin_dir_path(__FILE__) . 'includes/product/cpt.php';
 require_once plugin_dir_path(__FILE__) . 'includes/product/acf.php';
+require_once plugin_dir_path(__FILE__) . 'includes/category/product_category.php';
+require_once plugin_dir_path(__FILE__) . 'includes/category/acf.php';
 
 add_action('admin_head', function () {
   $screen = get_current_screen();
