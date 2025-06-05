@@ -32,3 +32,44 @@ function register_product_cpt()
 }
 
 add_action('init', 'register_product_cpt');
+
+
+// example relationship
+add_action('acf/init', function() {
+    if( function_exists('acf_add_local_field_group') ):
+
+    acf_add_local_field_group([
+        'key' => 'group_servicio_caracteristicas',
+        'title' => 'Características Relacionadas',
+        'fields' => [
+            [
+                'key' => 'field_caracteristicas_relacionadas',
+                'label' => 'Características Relacionadas',
+                'name' => 'caracteristicas_relacionadas',
+                'type' => 'relationship', // Tipo relación
+                'post_type' => ['caracteristica'], // Solo características
+                'filters' => ['search', 'post_type', 'taxonomy'],
+                'elements' => '',
+                'min' => '',
+                'max' => '',
+                'return_format' => 'object', // WP_Post objects
+                'multiple' => 1,
+            ],
+        ], 
+        'location' => [
+            [
+                [
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'servicio',
+                ],
+            ],
+        ],
+        'style' => 'default',
+        'position' => 'normal',
+        'menu_order' => 0,
+        'active' => true,
+    ]);
+
+    endif;
+});
